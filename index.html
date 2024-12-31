@@ -76,7 +76,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calculadora de Intereses</h1>
+        <h1>Calculadora de Interes Compuesto</h1>
         <form id="interestForm">
             <label for="principal">Ingresa tu monto inicial de inversion:</label>
             <input type="number" id="principal" required>
@@ -130,7 +130,7 @@
 
             // Display results
             let resultHtml = `
-                <h2>Results</h2>
+                <h2>Resultados:</h2>
                 <table>
                     <thead>
                         <tr>
@@ -156,7 +156,7 @@
             resultHtml += `
                     </tbody>
                 </table>
-                <h3>Total Interest for Period: ${totalInterest.toFixed(2)}</h3>`;
+                <h3>El total de intereses generados en ese periodo es de: ${totalInterest.toFixed(2)}</h3>`;
 
             document.getElementById('results').innerHTML = resultHtml;
         });
